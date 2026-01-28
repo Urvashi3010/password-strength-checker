@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test Buttons</title>
+</head>
+<body>
+  <input type="password" id="pwd" />
+  <button id="checkBtn">Check</button>
+  <button id="toggleBtn">Toggle</button>
+  
+  <script>
+    const pwd = document.getElementById("pwd");
+    const checkBtn = document.getElementById("checkBtn");
+    const toggleBtn = document.getElementById("toggleBtn");
+    
+    console.log("Elements:", { pwd: !!pwd, checkBtn: !!checkBtn, toggleBtn: !!toggleBtn });
+    
+    if (checkBtn) {
+      checkBtn.addEventListener("click", function() {
+        console.log("Check button clicked!");
+        alert("Check button works!");
+      });
+    }
+    
+    if (toggleBtn) {
+      toggleBtn.addEventListener("click", function() {
+        console.log("Toggle button clicked!");
+        alert("Toggle button works!");
+      });
+    }
+  </script>
+</body>
+</html>
